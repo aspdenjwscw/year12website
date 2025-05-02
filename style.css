@@ -1,5 +1,17 @@
-/* ---- Body ---- */
+/* ---- Index Background ---- */
 
-.homepageBody {
-    background-color: aqua;
+.indexBackground {
+    margin: 0;
+}
+
+/* ---- Home Navigation Bar ---- */
+
+.homeNavigation {
+    background-color: #ffdc5c;
+    height: 1.8cm;
+}
+
+.homeNavLink1 {
+    font-size: 50px;
+    margin-left: 500px;
 }
