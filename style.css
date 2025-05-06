@@ -6,14 +6,56 @@
 
 /* ---- Home Navigation Bar ---- */
 
-.homeNavigation {
+.nav {
     background-color: #ffdc5c;
-    height: 1.8cm;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.homeNavLink1 {
-    font-size: 50px;
-    margin-left: 500px;
-    font-family: Arial, Helvetica, sans-serif;
-    
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    max-width: 1200px;
+    margin:auto;
+}
+
+.nav__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.2rem
+}
+
+.nav__left {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    margin-left: 18%;
+}
+
+.nav__link {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.nav__link__active {
+    text-decoration: underline;
+}
+
+.nav__login {
+    color: #6b4e00;
+    text-decoration: underline;
+    text-align: center;
+    width: 100%;
+}
+
+.nav__create {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
 }
