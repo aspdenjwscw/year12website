@@ -2,13 +2,37 @@
 
 .indexBackground {
     margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
+.svg-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+  }
+
+.red_circle {
+    fill: #ff5757;
+}
+
+.green_circle {
+    fill: #7ed957;
+}
+
+.blue_circle {
+    fill: #0cc0df;
+}
 /* ---- Home Navigation Bar ---- */
 
 .nav {
     background-color: #ffdc5c;
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    z-index: 1;
 }
 
 .nav__container {
