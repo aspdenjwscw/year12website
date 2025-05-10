@@ -1,4 +1,4 @@
-/* ---- Index Background ---- */
+/* ---- Home Background ---- */
 
 .indexBackground {
     margin: 0;
@@ -13,6 +13,7 @@
     width: 100%;
     z-index: 2;
     overflow: hidden;
+    pointer-events: none;
   }
 
 .red_circle {
@@ -26,6 +27,56 @@
 .blue_circle {
     fill: #0cc0df;
 }
+
+.homeinfo {
+    position: absolute;
+    left: 29.5%;
+    top: 12%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.home__h1, .home__h2 {
+    word-wrap: break-word;
+    word-break: break-word; 
+}
+
+.home__h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 55px;
+    margin-bottom: 0.1rem;
+    max-width: 100%;
+}
+
+.home__h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-decoration: none;
+    font-weight: lighter;
+    margin-top: 0;
+}
+
+.homeinfo__left, 
+.homeinfo__right {
+    flex: 1;
+}
+
+.homeinfoboxtitle {
+    font-size: 30px;
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.homeinfobox {
+    font-size: 30px;
+    margin-top: 0;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* ---- Home Navigation Bar ---- */
 
 .nav {
