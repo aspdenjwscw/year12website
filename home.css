@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9f9;
+  line-height: 1.5;
+}
+
+.svg-background svg {
+  position: fixed; /* or absolute if you prefer */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Makes it go behind everything */
+  overflow: hidden;
+  pointer-events: none; /* Prevents it from blocking clicks */
+}
+
+.red_circle {
+fill: #ff5757;
+}
+
+.green_circle {
+fill: #7ed957;
+}
+
+.blue_circle {
+fill: #0cc0df;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.nav__left,
+.nav__right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav__link,
+.nav__create,
+.nav__login {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav__link__active {
+  font-weight: bold;
+}
+
+.homeinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.homeinfo__intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.home__h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.home__h2 {
+  font-size: 1.25rem;
+  color: gray;
+}
+
+.homeinfo__content {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+
+.homeinfo__left,
+.homeinfo__right {
+  flex: 1 1 400px;
+  background-color: #f1f1f1;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  max-width: 100%;
+}
+
+/* Make content responsive on mobile */
+@media (max-width: 768px) {
+  .nav__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav__left,
+  .nav__right {
+    justify-content: center;
+  }
+
+  .home__h1 {
+    font-size: 2rem;
+  }
+
+  .home__h2 {
+    font-size: 1rem;
+  }
+
+  .homeinfo__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homeinfo__left,
+  .homeinfo__right {
+    width: 100%;
+    max-width: 100%;
+  }
+}
