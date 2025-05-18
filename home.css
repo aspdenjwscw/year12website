@@ -39,7 +39,7 @@ fill: #0cc0df;
   align-items: center;
   flex-wrap: wrap;
   padding: 1rem 2rem;
-  background-color: #ffffff;
+  background-color: #ffdc5c;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -71,6 +71,7 @@ fill: #0cc0df;
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  gap: 3rem;
 }
 
 .homeinfo__intro {
@@ -107,8 +108,7 @@ fill: #0cc0df;
   max-width: 100%;
 }
 
-/* Make content responsive on mobile */
-@media (max-width: 768px) {
+@media all and (max-width: 768px) {
   .nav__container {
     flex-direction: column;
     text-align: center;
