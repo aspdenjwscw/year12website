@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account Creation</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <link rel="stylesheet" href="createAccount.css">
 </head>
-<body>
-    
+<body class="homeBackground">
+  
+<div class="svg-background">
+  <svg viewBox="0 0 800 500" preserveAspectRatio="none">
+    <ellipse class="blue_circle" cx="120" cy="230" rx="60" ry="300" />
+    <ellipse class="green_circle" cx="30" cy="580" rx="250" ry="300" />
+    <ellipse class="red_circle" cx="18" cy="250" rx="90" ry="360"/>
+  </svg>
+</div>
+
+<div class="svg-background">
+  <svg viewBox="0 0 800 500" preserveAspectRatio="none">
+    <ellipse class="blue_circle" cx="700" cy="230" rx="60" ry="300" />
+    <ellipse class="green_circle" cx="800" cy="580" rx="250" ry="300" />
+    <ellipse class="red_circle" cx="780" cy="250" rx="90" ry="360"/>
+  </svg>
+</div>
+
+<header class="nav">
+  <div class="nav__container">
+    <nav class="nav__left">
+      <a href="#" class="nav__link nav__link__active">Home</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="help.html" class="nav__link">Help</a>
+    </nav>
+
+  </div>
+</header>
+
+<div class="createAccountDiv">
+<h2 class="registerh2">Register</h2>
+  <form action="/register" method="POST">
+    <input class="registerInput" type="text" name="username" placeholder="Username" required /><br>
+    <input class="registerInput" type="password" name="password" placeholder="Password" required /><br>
+    <button class="registerButton" type="submit">Register</button>
+  </form>
+<a class="registerRedi" href="login.html">Already have an account? Login</a>
+</div>
+
 </body>
-</html>

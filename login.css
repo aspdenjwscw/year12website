@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9f9;
+  line-height: 1.5;
+}
+
+.svg-background svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+  overflow: hidden;
+  pointer-events: none; 
+}
+
+.red_circle {
+fill: #ff5757;
+}
+
+.green_circle {
+fill: #7ed957;
+}
+
+.blue_circle {
+fill: #0cc0df;
+}

@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9f9;
+  line-height: 1.5;
+}
+
+.svg-background svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+  overflow: hidden;
+  pointer-events: none; 
+}
+
+.red_circle {
+fill: #ff5757;
+}
+
+.green_circle {
+fill: #7ed957;
+}
+
+.blue_circle {
+fill: #0cc0df;
+}
+
+.createAccountDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  gap: 3rem;
+  margin-top: 10%;
+}
+
+.registerh2 {
+    font-size: 2.5rem;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.registerInput {
+    width: 100;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    font-family: "Segoe UI", sans-serif;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    text-align: center;
+}
+
+.registerButton {
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    align-items: center;
+    font-family: "Segoe UI", sans-serif;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.registerRedi {
+    font-size: 1rem;
+    font-family: "Segoe UI", sans-serif;
+    margin-top: 0;
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    background-color: #ffdc5c;
+    max-width: 100%;
+    margin: 0 auto;
+}
+  
+.nav__left,
+.nav__right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+  
+.nav__link,
+.nav__create,
+.nav__login {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+  
+.nav__link__active {
+    font-weight: bold;
+}
