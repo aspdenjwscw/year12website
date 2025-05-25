@@ -32,3 +32,33 @@ fill: #7ed957;
 .blue_circle {
 fill: #0cc0df;
 }
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    background-color: #ffdc5c;
+    max-width: 100%;
+    margin: 0 auto;
+}
+  
+.nav__left,
+.nav__right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+  
+.nav__link,
+.nav__create,
+.nav__login {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+  
+.nav__link__active {
+    font-weight: bold;
+}
