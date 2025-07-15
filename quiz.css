@@ -2,15 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
   
   body {
     font-family: "Segoe UI", sans-serif;
     background-color: #f9f9f9;
     line-height: 1.5;
-  }
+}
   
-  .svg-background svg {
+.svg-background svg {
     position: fixed;
     top: 0;
     left: 0;
@@ -19,21 +19,21 @@
     z-index: -1; 
     overflow: hidden;
     pointer-events: none;
-  }
+}
   
-  .red_circle {
+.red_circle {
   fill: #ff5757;
-  }
+}
   
-  .green_circle {
+.green_circle {
   fill: #7ed957;
-  }
+}
   
-  .blue_circle {
+.blue_circle {
   fill: #0cc0df;
-  }
+}
   
-  .nav__container {
+.nav__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,22 +42,44 @@
     background-color: #ffdc5c;
     max-width: 100%;
     margin: 0 auto;
-  }
+}
   
-  .nav__left,
-  .nav__right {
+.nav__left,
+.nav__right {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-  }
+}
   
+.nav__link {
+  position: relative;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #333;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease;
+}
+
+.nav__link:hover::after {
+  width: 100%;
+}
+
   .nav__link,
   .nav__create,
   .nav__login {
     text-decoration: none;
     color: #333;
     font-weight: 500;
-  }
+}
   
   .nav__link__active {
     font-weight: bold;
