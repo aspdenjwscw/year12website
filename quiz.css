@@ -129,7 +129,55 @@
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     max-width: 100%;
   }
+
+  .app {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  .app h1 {
+    text-align: center;
+    margin-bottom: 0px;
+    border-bottom: 2px solid #ffdc5c;
+  }
+
+  .app h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
   
+  .btn {
+    background: #fff;
+    color: #333;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ffdc5c;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .btn:hover {
+    background: #ffdc5c;
+    color: #333;
+  }
+
+  #next-button {
+    background: #ffdc5c;
+    color: #333;
+    width: 40%;
+    padding: 10px;;
+    margin: 20px auto 0;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s, color 0.3s;
+    display: none;
+  }
+
   @media all and (max-width: 768px) {
     .nav__container {
       flex-direction: column;
