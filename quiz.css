@@ -137,10 +137,11 @@
     margin: 40px auto 0;
     border-radius: 10px;
     padding: 30px;
+    border: 0px solid #ffdc5c;
   }
   .app h1 {
     text-align: center;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     border-bottom: 2px solid #ffdc5c;
   }
 
@@ -155,7 +156,7 @@
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 2px solid #ffdc5c;
+    border: 2px solid #fff;
     text-align: left;
     cursor: pointer;
     transition: all 0.3s;
@@ -177,6 +178,38 @@
     transition: 0.3s, color 0.3s;
     display: none;
   }
+
+  button.correct {
+  background-color: #4CAF50; /* green */
+  color: white;
+}
+
+button.incorrect {
+  background-color: #f44336; /* red */
+  color: white;
+}
+
+#next-btn {
+  background-color: #ffdc5c;  /* your site’s yellow */
+  color: #333;
+  border: none;
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: none;
+  margin: 20px auto 0;
+  display: block;
+  width: fit-content;
+  text-align: center;
+}
+
+#next-btn:hover {
+  background-color: #e6c850;
+}
+
+
 
   @media all and (max-width: 768px) {
     .nav__container {
