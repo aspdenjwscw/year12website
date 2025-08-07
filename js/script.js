@@ -1,3 +1,5 @@
+/* QUESTIONS AND ANSWERS DATA */
+
 const questions = [
   {
     question: "What is a simple way to remember when tests, assignments, and projects are due?",
@@ -181,6 +183,7 @@ const questions = [
   }
 ];
 
+/* QUIZ FUNCTIONS */
 
 const questionElement = document.getElementById("question");
 const answerButton = document.getElementById("answer-buttons");
@@ -195,6 +198,8 @@ function startQuiz(){
     nextButton.innerHTML = "Next";
     showQuestion();
 }
+
+/* Function to display the current question and answers */
 
 function showQuestion() {
     resetState();
@@ -213,6 +218,8 @@ function showQuestion() {
         answerButton.appendChild(button);
     });
 }
+
+/* Function to handle the answer selection */
 
 function selectAnswer(e) {
     const selectedBtn = e.target;
@@ -235,6 +242,9 @@ function selectAnswer(e) {
     nextButton.style.display = "block";
 }
 
+/* Function to reset the questionnaire for next question and to to show the score
+if the user has finished the quiz */
+
 function resetState() {
     nextButton.style.display = "none";
     while (answerButton.firstChild) {
@@ -247,6 +257,13 @@ function showScore() {
     questionElement.innerText = `You scored ${score} out of ${questions.length}!`;
     nextButton.innerText = "Restart";
     nextButton.style.display = "block";
+    if (score === questions.length) {
+        questionElement.innerText += " Perfect score!";
+    } else if (score >= questions.length / 2) {
+        questionElement.innerText += " Good job!";
+    } else {
+        questionElement.innerText += " Keep trying!";
+    }
 }
 
 nextButton.addEventListener("click", () => {

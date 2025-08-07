@@ -8,6 +8,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
+<!-- Animations --> 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
       gsap.registerPlugin(ScrollTrigger);
@@ -19,7 +20,7 @@
           toggleActions: "play none none none"
         },
         opacity: 0,
-        duration: 3,
+        duration: 2,
         stagger: 0.3,
       });
 
@@ -30,17 +31,28 @@
           toggleActions: "play none none none"
         },
         opacity: 0,
-        duration: 3,
+        duration: 2,
+        stagger: 0.3,
+      });
+
+      gsap.from(".app", {
+        scrollTrigger: {
+          trigger: ".app",
+          start: "top 80%",
+          toggleActions: "play none none none"
+        },
+        opacity: 0,
+        duration: 2,
         stagger: 0.3,
       });
       
     });
 </script>
-
 </head>
 
 <body class="homeBackground">
   
+<!-- Background shapes -->
 <div class="svg-background">
   <svg viewBox="0 0 800 500" preserveAspectRatio="none">
     <ellipse class="blue_circle" cx="120" cy="230" rx="60" ry="300" />
@@ -49,6 +61,7 @@
   </svg>
 </div>
 
+<!-- Navigation bar -->
 <header class="nav">
   <div class="nav__container">
     <nav class="nav__left">
@@ -60,12 +73,12 @@
   </div>
 </header>
 
+<!-- Main content -->
 <main class="homeinfo">
   <div class="homeinfo__intro">
     <h1 class="home__h1">Quiz!</h1>
     <h2 class="home__h2">A quiz to test your knowledge!</h2>
   </div>
-
 
 <div class="app">
   <h1>Quiz!</h1>
@@ -77,5 +90,6 @@
 </div>
 
 <script src="js/script.js"></script>
+</main>
 </body>
 </html>

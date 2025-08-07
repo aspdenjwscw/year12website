@@ -33,6 +33,7 @@
   fill: #0cc0df;
 }
   
+/* Navigation bar */
 .nav__container {
     display: flex;
     justify-content: space-between;
@@ -73,7 +74,7 @@
   width: 100%;
 }
 
-  .nav__link,
+.nav__link,
   .nav__create,
   .nav__login {
     text-decoration: none;
@@ -81,11 +82,12 @@
     font-weight: 500;
 }
   
-  .nav__link__active {
+.nav__link__active {
     font-weight: bold;
-  }
-  
-  .homeinfo {
+}
+
+/* Main content styling */
+.homeinfo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,24 +95,24 @@
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
-  }
+}
   
-  .homeinfo__intro {
+.homeinfo__intro {
     text-align: center;
     margin-bottom: 2rem;
-  }
+}
   
-  .home__h1 {
+.home__h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
-  }
+}
   
-  .home__h2 {
+.home__h2 {
     font-size: 1.25rem;
     color: gray;
-  }
+}
   
-  .homeinfo__content {
+.homeinfo__content {
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -118,9 +120,9 @@
     gap: 2rem;
     width: 100%;
     margin-top: 2rem;
-  }
+}
   
-  .homeinfo__left,
+.homeinfo__left,
   .homeinfo__right {
     flex: 1 1 400px;
     background-color: #f1f1f1;
@@ -128,9 +130,10 @@
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     max-width: 100%;
-  }
+}
 
-  .app {
+/* Styling for quiz */
+.app {
     background: #fff;
     width: 90%;
     max-width: 600px;
@@ -138,19 +141,19 @@
     border-radius: 10px;
     padding: 30px;
     border: 0px solid #ffdc5c;
-  }
-  .app h1 {
+}
+.app h1 {
     text-align: center;
     margin-bottom: 5px;
     border-bottom: 2px solid #ffdc5c;
-  }
+}
 
-  .app h2 {
+.app h2 {
     text-align: center;
     margin-bottom: 10px;
-  }
+}
   
-  .btn {
+.btn {
     background: #fff;
     color: #333;
     width: 100%;
@@ -160,14 +163,14 @@
     text-align: left;
     cursor: pointer;
     transition: all 0.3s;
-  }
+}
 
-  .btn:hover {
+.btn:hover {
     background: #ffdc5c;
     color: #333;
-  }
+}
 
-  #next-button {
+#next-button {
     background: #ffdc5c;
     color: #333;
     width: 40%;
@@ -177,20 +180,20 @@
     cursor: pointer;
     transition: 0.3s, color 0.3s;
     display: none;
-  }
+}
 
-  button.correct {
-  background-color: #4CAF50; /* green */
+button.correct {
+  background-color: #4CAF50;
   color: white;
 }
 
 button.incorrect {
-  background-color: #f44336; /* red */
+  background-color: #f44336;
   color: white;
 }
 
 #next-btn {
-  background-color: #ffdc5c;  /* your site’s yellow */
+  background-color: #ffdc5c;
   color: #333;
   border: none;
   padding: 12px 30px;
@@ -209,9 +212,8 @@ button.incorrect {
   background-color: #e6c850;
 }
 
-
-
-  @media all and (max-width: 768px) {
+/* Makes website responsive to different resolutions */
+@media all and (max-width: 768px) {
     .nav__container {
       flex-direction: column;
       text-align: center;
