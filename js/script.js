@@ -242,15 +242,14 @@ function selectAnswer(e) {
     nextButton.style.display = "block";
 }
 
-/* Function to reset the questionnaire for next question and to to show the score
-if the user has finished the quiz */
-
 function resetState() {
     nextButton.style.display = "none";
     while (answerButton.firstChild) {
         answerButton.removeChild(answerButton.firstChild);
     }
 }
+
+/* Function to dissplay the final score and a message based on the score */
 
 function showScore() {
     resetState();
@@ -266,6 +265,10 @@ function showScore() {
     }
 }
 
+/* Checks if user has finished the quiz (if currentQuestionIndex 
+is less than the total number of questions which is checked in the if statement),
+it will then showScore which runs another check and gives them their score
+and feedback based on the amount of questions they got right. */
 nextButton.addEventListener("click", () => {
     if (nextButton.innerText === "Restart") {
         startQuiz();
@@ -279,6 +282,7 @@ nextButton.addEventListener("click", () => {
     }
 });
 
+/* Starts the quiz when the page loads */
 startQuiz();
 
 
