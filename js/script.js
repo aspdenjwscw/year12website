@@ -283,6 +283,15 @@ nextButton.addEventListener("click", () => {
 });
 
 /* Starts the quiz when the page loads */
-startQuiz();
-
-
+function startQuiz() {
+    /* Checks if questions exist, if not it will display a message and hide the next button*/
+    if (!questions || questions.length === 0) {
+        questionElement.innerText = "No questions available. Please try again later.";
+        nextButton.style.display = "none";
+        return;
+    }
+    currentQuestionIndex = 0;
+    score = 0;
+    nextButton.innerHTML = "Next";
+    showQuestion();
+}
