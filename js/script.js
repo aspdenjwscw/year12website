@@ -192,13 +192,6 @@ const nextButton = document.getElementById("next-btn");
 let currentQuestionIndex = 0;
 let score = 0;
 
-function startQuiz(){
-    currentQuestionIndex = 0;
-    score = 0;
-    nextButton.innerHTML = "Next";
-    showQuestion();
-}
-
 /* Function to display the current question and answers */
 
 function showQuestion() {
@@ -295,3 +288,5 @@ function startQuiz() {
     nextButton.innerHTML = "Next";
     showQuestion();
 }
+
+startQuiz();
